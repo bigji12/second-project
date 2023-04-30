@@ -29,15 +29,21 @@ public class Product {
     }
 
     public Double priceOfFood(String food) {
+        Double priceOfThisFood = 0.0;
         for (int i = 0; i < foods.size(); i++) {
             if (foods.get(i).equals(food)) {
-                Double priceOfThisFood = prices.get(i);
+               priceOfThisFood = prices.get(i);
                 addPrice(priceOfThisFood);
-                return priceOfThisFood;
             }
-            return null;
         }
-        return null;
+        return priceOfThisFood;
+    }
+
+    public boolean contains(String food) {
+        if (this.foods.contains(food)) {
+            return true;
+        }
+        return false;
     }
 
     // Metoda për të marrë informacionin e produkteve nga file-i
