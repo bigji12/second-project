@@ -2,9 +2,10 @@ import java.util.Scanner;
 import java.util.ArrayList;
 
 public class Product {
+    private ArrayList<String> food;
+    //private ArrayList<Integer> price;
     private String name;
     private double price;
-
 
     public Product(String name, double price) {
         this.name = name;
@@ -27,7 +28,6 @@ public class Product {
                 String[] parts = line.split(",");
                 String foodName = parts[0];
                 double foodPrice = Double.parseDouble(parts[1]);
-                
                 
             }
             
