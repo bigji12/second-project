@@ -8,9 +8,9 @@ public class Product {
     private String name;
     private double price;
 
-    public Product(String name, double price) {
-        this.name = name;
-        this.price = price;
+    public Product() {
+        this.name = "";
+        this.price = 0;
         this.foods = new ArrayList<>();
         this.prices = new ArrayList<>();
     }
