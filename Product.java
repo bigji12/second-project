@@ -10,7 +10,7 @@ public class Product {
 
     public Product() {
         this.name = "";
-        this.price = 0;
+        this.price = price;
         this.foods = new ArrayList<>();
         this.prices = new ArrayList<>();
     }

@@ -16,7 +16,7 @@ public class UserInterface{
             System.out.println("What can we offer you?(Drinks or Food)");
             String whatCosumatorWant = scan.nextLine();
             if(whatCosumatorWant.equalsIgnoreCase("food")){
-            
+                products.printMenu();
             }
 
         }
