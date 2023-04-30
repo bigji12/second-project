@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Registration {
     private Scanner scanner;
     private String name;
-    public registration(Scanner scanner){
+    public Registration(Scanner scanner){
         this.scanner = scanner;
         this.name = "";
     }
