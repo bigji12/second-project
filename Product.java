@@ -25,7 +25,7 @@ public class Product {
 
     public void printMenu() {
         for (int i = 0; i < foods.size(); i++) {
-            System.out.println(i + 1 + ". " + foods.get(i) + "=>" + prices.get(i) + "€");
+            System.out.println(i + 1 + ". " + foods.get(i) + " => " + prices.get(i) + "$");
         }
     }
 

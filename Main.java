@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         Product dp = new Product();
-        UserInterface ui = new UserInterface(scanner);
+        UserInterface ui = new UserInterface(scanner,dp);
         ui.start();
     }
 
