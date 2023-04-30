@@ -27,6 +27,7 @@ public class Product{
                 products[i] = new Product(name, price);
                 i++;
             }
+            
         } catch (Exception e) {
 
         }
