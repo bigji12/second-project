@@ -10,16 +10,6 @@ public class Product{
         this.foodName = foodName;
         this.foodPrice = foodPrice;
 
-public class Product {
-    private String name;
-    private double price;
-
-
-    public Product(String name, double price) {
-        this.name = name;
-        this.price = price;
-
-    }
 
     public String getName() {
         return this.foodName; //Merr emrin e produktit(ushqimit)
