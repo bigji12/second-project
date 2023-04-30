@@ -3,7 +3,7 @@ import java.util.ArrayList;
 
 public class Product {
     private ArrayList<String> food;
-    //private ArrayList<Integer> price;
+    private ArrayList<Integer> price;
     private String name;
     private double price;
 
