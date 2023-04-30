@@ -9,14 +9,13 @@ public class Product {
     private double price;
 
     public Product() {
-        this.name = "";
-        this.price = price;
+        this.price = 0;
         this.foods = new ArrayList<>();
         this.prices = new ArrayList<>();
     }
 
-    public String getName() {
-        return name;
+    public double totalPrice() {
+        return this.price;
     }
 
     public void addPrice(Double foodPrice) {
@@ -25,7 +24,7 @@ public class Product {
 
     public void printMenu() {
         for (int i = 0; i < foods.size(); i++) {
-            System.out.println(i + 1 + ". " + foods.get(i) + "=>" + prices.get(i) + "€");
+            System.out.println(i + 1 + ". " + foods.get(i) + " => " + prices.get(i) + "$");
         }
     }
 
