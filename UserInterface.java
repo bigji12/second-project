@@ -16,6 +16,7 @@ public class UserInterface {
         while (true) {
             System.out.println("Hi there!");
             System.out.println("Welcome here where the food is the best in the world");
+            Registration(scan);
             System.out.println("What can we offer you?(Drinks or Food)");
             String whatCosumatorWant = scan.nextLine();
             if (whatCosumatorWant.equals("food")) {
