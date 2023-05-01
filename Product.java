@@ -9,14 +9,13 @@ public class Product {
     private double price;
 
     public Product() {
-        //this.name = name;
-        this.price = price;
+        this.price = 0;
         this.foods = new ArrayList<>();
         this.prices = new ArrayList<>();
     }
 
-    public String getName() {
-        return name;
+    public double totalPrice() {
+        return this.price;
     }
 
     public void addPrice(Double foodPrice) {
