@@ -28,13 +28,16 @@ public class Product {
         }
     }
 
-    public void priceOfFood(String food) {
+    public Double priceOfFood(String food) {
         for (int i = 0; i < foods.size(); i++) {
             if (foods.get(i).equals(food)) {
                 Double priceOfThisFood = prices.get(i);
                 addPrice(priceOfThisFood);
+                return priceOfThisFood;
             }
+            return null;
         }
+        return null;
     }
 
     // Metoda për të marrë informacionin e produkteve nga file-i
