@@ -7,5 +7,4 @@ public class Main {
         UserInterface ui = new UserInterface(scanner,dp);
         ui.start();
     }
-
 }
