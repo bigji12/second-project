@@ -30,20 +30,25 @@ public class UserInterface {
         this.product.iteratorInFile("Menu");
         this.product.printMenu();
         System.out.println("Everything is very delicious.");
-        System.out.println("What do you like to eat?");
-        String food = scan.nextLine();
-        if (product.contains(food)) {
-            System.out.println("Do you want something else?(yes/no)");
-            String somethingElse = scan.nextLine();
-            if (somethingElse.toLowerCase().equals("yes")) {
-                this.product.printMenu();
-                String secondFood = scan.nextLine();
-                if (product.contains(secondFood)) {
-                    System.out.println("Your total bill it's: " + this.product.totalPrice());
+        while (true) {
+
+            System.out.println("What do you like to eat?");
+            String food = scan.nextLine();
+            this.product.priceOfFood(food);
+            if (product.contains(food)) {
+
+                System.out.println("Do you want something else?(yes/no)");
+                String somethingElse = scan.nextLine();
+                if (somethingElse.toLowerCase().equals("yes")) {
+                    this.product.printMenu();
+
+                } else {
+                    System.out.println("Bill you have to pay for your food: " + this.product.totalPrice());
+                    break;
                 }
-            } else {
-                System.out.println("Bill you have to pay for your food: " + this.product.priceOfFood(food));
+
             }
+
         }
     }
 
