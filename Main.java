@@ -3,8 +3,9 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        Product dp = new Product();
-        UserInterface ui = new UserInterface(scanner,dp);
-        ui.start();
+        FoodOrder products = new FoodOrder();
+        UserInterface uI = new UserInterface(scanner,products);
+        uI.start();
+
     }
 }

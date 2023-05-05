@@ -2,16 +2,17 @@ import java.util.Scanner;
 import java.util.ArrayList;
 import java.nio.file.Paths;
 
-public class Product {
+public class FoodOrder {
     private ArrayList<String> foods;
     private ArrayList<Double> prices;
-    private String name;
+    private ArrayList<String> order;
     private double price;
 
-    public Product() {
+    public FoodOrder() {
         this.price = 0;
         this.foods = new ArrayList<>();
         this.prices = new ArrayList<>();
+        this.order = new ArrayList<>();
     }
 
     public double totalPrice() {
@@ -28,18 +29,39 @@ public class Product {
         }
     }
 
-    public Double priceOfFood(String food) {
+    public void printOrderList() {
+        if (order.size() == 0) {
+            System.out.println("You have not placed any orders!!");
+        } else {
+            System.out.println("You ordered these:");
+            for (String food : order) {
+                System.out.println(food);
+            }
+        }
+
+    }
+
+    public void addFood(String customerOrder) {
+        this.order.add(customerOrder);
+    }
+
+    public Double saveOrderAndPrice(String food) {
         Double priceOfThisFood = 0.0;
+        String customerOrder = "";
         for (int i = 0; i < foods.size(); i++) {
             if (foods.get(i).equals(food)) {
-               priceOfThisFood = prices.get(i);
-                addPrice(priceOfThisFood);   
+                priceOfThisFood = prices.get(i);
+                customerOrder = foods.get(i);
+                addPrice(priceOfThisFood);
+                addFood(customerOrder);
             }
         }
         return priceOfThisFood;
     }
 
-    public boolean contains(String food) {
+
+}
+public boolean contains(String food) {
         if (this.foods.contains(food)) {
             return true;
         }
@@ -61,4 +83,3 @@ public class Product {
 
         }
     }
-}
