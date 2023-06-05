@@ -66,18 +66,6 @@ public class FoodOrder {
         return priceOfThisFood;
     }
 
-<<<<<<< Updated upstream
-
-}
-public boolean contains(String food) {
-        if (this.foods.contains(food)) {
-            return true;
-        }
-        return false;
-    }
-
-=======
->>>>>>> Stashed changes
     // Metoda për të marrë informacionin e produkteve nga file-i
     public void iteratorInFile(String fileName) {
         try (Scanner scan = new Scanner(Paths.get(fileName))) {
@@ -92,14 +80,5 @@ public boolean contains(String food) {
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }
-<<<<<<< HEAD
     }
-<<<<<<< Updated upstream
-
 }
-=======
-    }
->>>>>>> 49d4854e665ea67eb0fa6195ad02db177ea31f7f
-=======
-}
->>>>>>> Stashed changes
