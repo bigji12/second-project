@@ -59,6 +59,7 @@ public class UserInterface {
             System.out.println("Your total payment is: " + product.totalPrice() + "$");
             if (product.totalPrice() == 0.0) {
                 System.out.println("See you next time!");
+
             } else {
                 System.out.println("How do you want to make the payment? (cash/card)");
                 String payment = scan.nextLine();
@@ -72,7 +73,14 @@ public class UserInterface {
                 }
             }
         }
-    }
+    }product.printOrderList();System.out.println("Your total payment is: "+product.totalPrice()+"$");if(product.totalPrice()==0.0)
+
+    {
+        System.out.println("See you next time!");
+    }else
+    {
+                System.out.println("How do you want to make the payment? (cash/card)");
+                String payment = scan.nextLine();
 
     public void personalData() {
         System.out.println("Your name:");

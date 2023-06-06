@@ -59,7 +59,9 @@ public class FoodOrder {
         return priceOfThisFood;
     }
 
-    public boolean contains(String food) {
+
+}
+public boolean contains(String food) {
         if (this.foods.contains(food)) {
             return true;
         }
@@ -80,6 +82,10 @@ public class FoodOrder {
         } catch (Exception e) {
 
         }
+<<<<<<< HEAD
     }
 
 }
+=======
+    }
+>>>>>>> 49d4854e665ea67eb0fa6195ad02db177ea31f7f
