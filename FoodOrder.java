@@ -6,13 +6,13 @@ public class FoodOrder {
     private ArrayList<String> foods;
     private ArrayList<Double> prices;
     private ArrayList<String> order;
-    private double price;
+    private int price;
 
     public FoodOrder() {
-        this.price = 0;
         this.foods = new ArrayList<>();
         this.prices = new ArrayList<>();
         this.order = new ArrayList<>();
+        this.price = price;
     }
 
     public double totalPrice() {
@@ -27,6 +27,13 @@ public class FoodOrder {
         for (int i = 0; i < foods.size(); i++) {
             System.out.println(i + 1 + ". " + foods.get(i) + " => " + prices.get(i) + "$");
         }
+    }
+
+    public boolean contains(String food) {
+        if (this.foods.contains(food)) {
+            return true;
+        }
+        return false;
     }
 
     public void printOrderList() {
@@ -59,6 +66,7 @@ public class FoodOrder {
         return priceOfThisFood;
     }
 
+<<<<<<< Updated upstream
 
 }
 public boolean contains(String food) {
@@ -68,6 +76,8 @@ public boolean contains(String food) {
         return false;
     }
 
+=======
+>>>>>>> Stashed changes
     // Metoda për të marrë informacionin e produkteve nga file-i
     public void iteratorInFile(String fileName) {
         try (Scanner scan = new Scanner(Paths.get(fileName))) {
@@ -80,12 +90,16 @@ public boolean contains(String food) {
                 prices.add(foodPrice);
             }
         } catch (Exception e) {
-
+            System.out.println(e.getMessage());
         }
 <<<<<<< HEAD
     }
+<<<<<<< Updated upstream
 
 }
 =======
     }
 >>>>>>> 49d4854e665ea67eb0fa6195ad02db177ea31f7f
+=======
+}
+>>>>>>> Stashed changes

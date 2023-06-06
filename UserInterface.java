@@ -20,8 +20,14 @@ public class UserInterface {
             if (whatCosumatorWant.toLowerCase().equals("food")) {
                 foodMethod();
                 break;
+            } else if (whatCosumatorWant.toLowerCase().equals("drinks")) {
+                drinksMethod();
             }
         }
+    }
+
+    public void drinksMethod() {
+
     }
 
     public void foodMethod() {
